@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: linear-gradient(to bottom, #00A4F6, #006191);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1 1 400px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.smart-home-text {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.description1 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Login Panel */
+.login-container {
+  flex: 1 1 400px;
+  width: 100%;
+  max-width: 546px;
+  background: linear-gradient(to bottom, #ffffff, #dfeffc);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.back-button {
+  background-color: #e0f2f1;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.2s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+.back-button:hover::after {
+  content: "Back";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.form-box {
+  background-color: #f9f9f9;
+  border: 2px solid #d0e0f0;
+  border-radius: 16px;
+  padding: 5%;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #003b64;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #555;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s;
+  cursor: pointer;
+}
+
+.input-field:hover,
+.input-field:focus {
+  box-shadow: 0 0 0 3px rgba(0, 174, 255, 0.5);
+  transform: scale(1.01);
+  outline: none;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.sign-in-button:hover {
+  transform: scale(1.03);
+}
+
+.sign-in-button:hover::after {
+  content: "Sign in to your account";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  transform: scale(1.03);
+}
+
+.forgot-password:hover::after {
+  content: "Click to reset password";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.signup-text a:hover {
+  transform: scale(1.03);
+}
+
+.signup-text a:hover::after {
+  content: "Create a new account";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* XS screen (phones) */
+@media (max-width: 500px) {
+  .image1 {
+    max-width: 180px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .left-panel {
+    padding: 10px;
+  }
+
+  .login-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .form-box {
+    padding: 15px;
+  }
+}

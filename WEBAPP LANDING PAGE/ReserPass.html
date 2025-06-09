@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Reset</title>
+  <link rel="stylesheet" href="resetpassdesign.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="reset-box">
+      <a href="Login.html" class="back-button">←</a>
+      <h2 class="reset-title">Reset Password</h2>
+      <p class="reset-subtitle">Enter your email and new password.</p>
+      <form id="resetForm">
+        <input type="email" placeholder="Email address" class="input-field" id="email" required />
+        
+        <div class="password-wrapper">
+          <input type="password" placeholder="New Password" class="input-field" id="newPassword" required />
+          <span class="toggle-password" onclick="togglePassword('newPassword', this)">👁️</span>
+        </div>
+        
+        <div class="password-wrapper">
+          <input type="password" placeholder="Confirm Password" class="input-field" id="confirmPassword" required />
+          <span class="toggle-password" onclick="togglePassword('confirmPassword', this)">👁️</span>
+        </div>
+
+        <button type="submit" class="reset-button">Reset Password</button>
+        <p class="login-link">Remembered your password? <a href="Login.html">Log In here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <div class="checkmark">✔</div>
+      <h2>Password Changed Successfully</h2>
+      <p>Your password has been changed successfully.</p>
+      <button class="login-button" onclick="location.href='Login.html'">Go to Login</button>
+    </div>
+  </div>
+
+  <script src="Reset.js"></script>
+</body>
+</html>

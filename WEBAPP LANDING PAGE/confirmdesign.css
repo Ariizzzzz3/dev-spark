@@ -1,0 +1,122 @@
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: linear-gradient(to bottom, #00A4F6, #006191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 840px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #e0f7fa;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #006064;
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #003b64;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 14px;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.code-inputs input {
+  width: 40px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.code-inputs input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(0, 174, 255, 0.3);
+}
+
+.code-inputs input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 174, 255, 0.5);
+}
+
+.confirm-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00aaff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.confirm-button:hover {
+  transform: scale(1.03);
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.signup-link a {
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.signup-link a:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .code-inputs input {
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+} 

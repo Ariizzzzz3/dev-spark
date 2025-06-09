@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #00A4F6, #006191);
+  padding: 20px;
+}
+
+.forgot-container {
+  background: white;
+  width: 840px;
+  height: 493px;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forgot-container:hover {
+  transform: scale(1.005);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.back-button {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  text-decoration: none;
+  color: #0077c2;
+  font-size: 22px;
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+.forgot-container h2 {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.forgot-container p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.input-group {
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.2);
+}
+
+.send-button {
+  width: 100%;
+  max-width: 600px;
+  padding: 14px;
+  margin: 0 auto;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  display: block;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #0077c2;
+}
+
+.signup-text {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.signup-text a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .forgot-container {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .input-group input,
+  .send-button {
+    font-size: 15px;
+  }
+}

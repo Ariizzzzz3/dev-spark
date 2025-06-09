@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forgot Password Code</title>
+  <link rel="stylesheet" href="confirmdesign.css">
+</head>
+<body>
+  <div class="container">
+    <div class="forgot-box">
+      <a href="Forgotpass.html" class="back-button">&#8592;</a>
+      <h2>Forgot Password</h2>
+      <p class="subtitle">Enter the 6-digit code sent to your email.</p>
+
+      <form onsubmit="return validateCode()">
+        <div class="code-inputs">
+          <input type="text" maxlength="1" required />
+          <input type="text" maxlength="1" required />
+          <input type="text" maxlength="1" required />
+          <input type="text" maxlength="1" required />
+          <input type="text" maxlength="1" required />
+          <input type="text" maxlength="1" required />
+        </div>
+
+        <button type="submit" class="confirm-button">Confirm Code</button>
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="confirm.js"></script>
+</body>
+</html>
